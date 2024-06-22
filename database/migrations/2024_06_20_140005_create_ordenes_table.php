@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('ordenes', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('plato_id');
-            $table->foreignId('mesa_id')->constrained()->onDelete('cascade');
-            $table->foreignId('categoria_id')->constrained()->onDelete('cascade');
+            // $table->foreignId('plato_id');
+            // $table->foreignId('mesa_id')->constrained()->onDelete('cascade');
+            // $table->foreignId('categoria_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }
